@@ -1,0 +1,92 @@
+==========================================
+1. clone an specific branch to your local
+===========================================
+git clone <git repo url>  	--clone maser brach
+git clone -b <branchName> <git repo URL> -- clone specific branch
+---------------------------------------------------------------------
+
+==========================================================================
+2. Create data in new file and create and pushed to remote repo
+==========================================================================
+create a folder and move inside that folder then follow below commands
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin <Repo URL>
+git push -u origin master
+---------------------------------------------------------------------------
+
+========================
+3. to see all logs
+========================
+git log			-- to see the committed changes in detail view
+git log --oneline 	-- it will show oneline commited log
+---------------------------------------------------------------------------
+
+============================
+4. To revert a local commit
+============================
+git reset HEAD ~1 		-- it will remove also from staging and keep in unstage
+git reset --soft HEAD ~1 	-- remove most recent commit and put into staging area. 
+---------------------------------------------------------------------------------------
+
+==============================================
+5. To remove a pushed code from remote branch
+==============================================
+git reset --hard HEAD ~1
+git push -f origin <branch name>
+----------------------------------------
+
+============================
+6. To unstage a staged file
+============================
+git restore --staged <fileName>
+
+--------------------------------
+
+===========================
+7. to check local changes
+===========================
+git status
+---------------------------
+
+===========================================================
+8. Add files and folder for commit from current directory
+===========================================================
+git add <fileName> .
+git add <folder name>
+git commit  -m "message"
+git push -u origin master --if we have only master branch
+----------------------------------------------------------
+
+========================================
+9. To move on another branch from local
+========================================
+git checkout -b <branch name>
+---------------------------------------
+
+=================================================
+10. Merge code from one branch to another branch
+=================================================
+git pull origin <branchName2>
+git push --set-upstream origin <branchName1> 	-- also used for push new branch 
+git checkout <branch2>
+git merge <branch1> 	-- merge code in specified branch
+git push
+---------------------------------------------------------------------------------
+
+==========================
+11. To work with branches
+==========================
+git branch 		    -- to see all branches
+git brabch <branchName>     -- create new branch
+git checkout <branchNmae>   -- make a branch active
+git checkout -b <branchName> --
+---------------------------------------------------
+
+
+
+
+
+
+
